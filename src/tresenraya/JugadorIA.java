@@ -1,4 +1,4 @@
-package jugador_ia;
+package tresenraya;
 
 public class JugadorIA {
 

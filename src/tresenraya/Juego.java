@@ -71,7 +71,7 @@ public class Juego {
                 sb.append(tablero[i][j]);
             }
         }
-        ProcessBuilder pb = new ProcessBuilder("java", "jugador_ia.JugadorIA", sb.toString());
+        ProcessBuilder pb = new ProcessBuilder("java", "tresenraya.JugadorIA", sb.toString());
         pb.redirectErrorStream(true);
         Process proceso = pb.start();
         
