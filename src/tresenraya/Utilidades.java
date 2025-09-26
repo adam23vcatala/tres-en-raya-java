@@ -25,6 +25,7 @@ public class Utilidades {
                     break;
                 case 4: // SALIR
                     continuar = false;
+                    break;
                 default:
                     esd.mostrarCadena("¡Opción no válida!");
             }
