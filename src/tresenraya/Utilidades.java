@@ -16,7 +16,9 @@ public class Utilidades {
                     conf.ajustes();
                     break;
                 case 2: // JUGAR
-                    j.jugar();
+                    esd.mostrarCadena("Introduce tu nombre: ");
+                    String nombre = esd.introducirCadena();
+                    j.jugar(nombre);
                     break;
                 case 3: // HISTORIAL
                     conf.registros();
