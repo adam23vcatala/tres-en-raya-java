@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class EntradaSalidaDatos {
     private Scanner sc = new Scanner(System.in);
     
-    private int introducirValorEnteroPositivo() {
+    public int introducirValorEnteroPositivo() {
         boolean valido = false;
         int valor = 0;
         while (!valido) {            
@@ -26,12 +26,12 @@ public class EntradaSalidaDatos {
         return valor;
     }
     
-    private String introducirCadena() {
+    public String introducirCadena() {
         String cadena = sc.nextLine();
         return cadena;
     }
     
-    private void mostrarCadena(String cad) {
+    public void mostrarCadena(String cad) {
         System.out.println(cad);
     }
 }
