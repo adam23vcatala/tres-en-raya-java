@@ -6,15 +6,20 @@ public class Utilidades {
 
     public void menu() {
         boolean continuar = true;
+        Configuracion conf = new Configuracion();
+        Juego j = new Juego();
         do {
             mostrarMenu();
             int opcion = esd.introducirValorEnteroPositivo();
             switch (opcion) {
                 case 1: // CONFIGURACIÓN
+                    conf.ajustes();
                     break;
                 case 2: // JUGAR
+                    j.jugar();
                     break;
                 case 3: // HISTORIAL
+                    conf.registros();
                     break;
                 case 4: // SALIR
                     continuar = false;
